@@ -77,6 +77,7 @@ class SPPermissionsDialogView: UIView {
         tableView.alwaysBounceVertical = false
         tableView.layer.cornerRadius = layer.cornerRadius
         tableView.layer.masksToBounds = true
+        tableView.backgroundColor = UIColor(red: 0.22, green: 0.22, blue: 0.22, alpha: 1.00)
         addSubview(tableView)
         
         closeButton.iconView.areaColor = .clear
