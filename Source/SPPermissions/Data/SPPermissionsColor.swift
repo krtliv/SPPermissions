@@ -36,12 +36,7 @@ enum SPPermissionsColor {
     }
     
     static var systemBackground: UIColor {
-        #if os(iOS)
-        if #available(iOS 13.0, *) {
-            return UIColor.systemBackground
-        }
-        #endif
-        return UIColor.white
+        return UIColor(red: 0.22, green: 0.22, blue: 0.22, alpha: 1.00)
     }
     
     static var secondarySystemBackground: UIColor {
@@ -62,19 +57,11 @@ enum SPPermissionsColor {
     }
     
     static var label: UIColor {
-        if #available(iOS 13.0, tvOS 13.0, *) {
-            return UIColor.label
-        } else {
-            return UIColor.black
-        }
+        return UIColor.white
     }
     
     static var secondaryLabel: UIColor {
-        if #available(iOS 13.0, tvOS 13.0, *) {
-            return UIColor.secondaryLabel
-        } else {
-            return UIColor(red: 138/255, green: 138/255, blue: 142/255, alpha: 1)
-        }
+        return UIColor.white
     }
     
     static var buttonArea: UIColor {
