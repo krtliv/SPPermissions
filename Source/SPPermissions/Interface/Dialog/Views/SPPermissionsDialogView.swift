@@ -49,7 +49,7 @@ class SPPermissionsDialogView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor(red: 0.22, green: 0.22, blue: 0.22, alpha: 1.00)
+        backgroundColor = SPPermissionsColor.systemBackground
         layer.cornerRadius = 15
         layer.anchorPoint = CGPoint.init(x: 0.5, y: 0.5)
         insetsLayoutMarginsFromSafeArea = false
