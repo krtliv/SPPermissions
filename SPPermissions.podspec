@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version       = "5.3.2"
   s.summary       = "Ask permissions on Swift. Available List, Dialog & Native interface. Can check state permission."
   s.homepage      = "https://github.com/IvanVorobei/SPPermissions"
-  s.source        = { :git => "https://github.com/IvanVorobei/SPPermissions.git", :tag => s.version }
+  s.source        = { :git => "https://github.com/krtliv/SPPermissions.git", :tag => s.version }
   s.license       = { :type => "MIT", :file => "LICENSE" }
   
   s.author        = { "Ivan Vorobei" => "ivanvorobei@icloud.com" }
