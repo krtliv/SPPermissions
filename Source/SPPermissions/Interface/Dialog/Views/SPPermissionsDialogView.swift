@@ -117,7 +117,12 @@ class SPPermissionsDialogView: UIView {
         let inset: CGFloat = 19
         let contentWidth = bounds.width - inset - inset
         let closeSide: CGFloat = 34
-        closeButton.frame = CGRect.init(x: bounds.width - inset / 2.5 - closeSide, y: inset / 2.5, width: closeSide, height: closeSide)
+        var boundsWidth = bounds.width
+        if UIView.userInterfaceLayoutDirection(
+          for: semanticContentAttribute) == .rightToLeft {
+            boundsWidth = 0 + inset + inset + inset
+        }
+        closeButton.frame = CGRect.init(x: boundsWidth - inset / 2.5 - closeSide, y: inset / 2.5, width: closeSide, height: closeSide)
         subtitleLabel.layout(x: inset, y: inset, width: contentWidth)
         titleLabel.layout(x: inset, y: subtitleLabel.frame.origin.y + subtitleLabel.frame.height + 2, width: contentWidth)
         let contentHeight = tableView.contentSize.height
